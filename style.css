@@ -7,8 +7,8 @@
 /*tried to figure out how to center logo on top*/
 
 header {
-    padding: 30px;
-  text-align: center;
+    padding: 35px;
+    text-align: center;
     background: #f6dedb;
     color: rgb(251, 250, 250);
     font-size: 30px;
@@ -17,30 +17,36 @@ header {
   }
 body {
     background-color: #fff9f9;
-   margin: 0;
+    margin: 0;
     min-width: 600px;
     margin: auto;
     padding: 50px;
     font-family: 'Courier New', Courier, monospace;
+    height: auto;
 }
 
-#logo{
+#images{
     float: center;
     align-items: center;
 }
-
-
-
+/* Used height property to change the amount of of empty space. */
 header h1 {
     margin: 0;
-   
+    height: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:#53a99c;
     font-size: 36px;
-
-    padding: 10px;
+    padding: 50px;
 
 }
+
+a:link{
+color:#26635a;
+}
+a:visited{
+    color: #f8897a;
+}
+
 h2, h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:#76b7ad;
@@ -62,11 +68,13 @@ p {
     
     
 }
+/* got a little creative and wanted to add an abstract image as the background of footer and add opacity to it */
 footer{
     background-image: url("images/BGabstract.jpg");
     opacity: 0.6;
     padding: 30px;
 }
+/* wanted too have the same type of font and scheme for the lists so I grouped them */
 ul,ol {
     flex-wrap: wrap;
     text-align:left;
@@ -74,10 +82,12 @@ ul,ol {
     color:#3c746c
 
 }
+/* decided to use dashed line for ruler to break from the usual solid line */
 hr{
     border-top: 1px dashed teal;
     border-radius: 2px;
 }
+/*understood that putting a max width will help keep text inline, still figuring out margins*/
 article {
     max-width: 600;
     flex-wrap: wrap;
